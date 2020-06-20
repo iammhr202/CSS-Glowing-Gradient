@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+  margin : 0px;
+  padding : 0px;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  min-height : 100vh;
+  background : #060c21;
+}
+.glowing-box {
+  position : relative;
+  background : #060c21;
+  max-width : 400px;
+  max-height : 400px;
+}
+
+.glowing-box:before{
+  content : '';
+  position : absolute;
+  top : -2px;
+  left : -2px;
+  right : -2px;
+  bottom : -2px;
+  background: #fff;
+  z-index : -1;
+}
+
+.glowing-box:after{
+  content : '';
+  position : absolute;
+  top : -2px;
+  left : -2px;
+  right : -2px;
+  bottom : -2px;
+  background: #fff;
+  z-index : -2;
+  filter : blur(40px);
+}
+
+.glowing-box:before ,
+.glowing-box:after{
+  background : linear-gradient(235deg, #89ff00 , #060c21 , #00bcd4);
+}
+
+.padding-text{
+  padding : 30px;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="glowing-box">
+    <h1 class="w3-center w3-text-white"><b>Lorem Ipsum</b></h1>
+    <p class ="w3-center w3-text-white padding-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum.</p>
+    <br>
+  </div>
+</body>
+</html>
